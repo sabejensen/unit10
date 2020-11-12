@@ -1,0 +1,47 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul.hide{
+        display: block;
+    }
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 0rem; text-align: center;}
+    nav ul li {
+        float: left;
+        width: 16%;
+    }
+    #nav-menu {
+        height: auto;
+    }
+    nav button {
+        display: none;
+    }
+    .parent ul li {
+        display: block;
+        float: none;
+        width: 140px;
+    }
+    #nav-menu li:hover ul {
+        position: absolute;
+        display: block;
+        float: left;
+    }
+    
+
+
+/*----------- MAIN --------------*/
+
+
+/*----------- FOOTER --------------*/
+    

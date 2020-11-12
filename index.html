@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Swag Shop</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+<!-- JS -->
+<script src="js/scripts.js"></script>
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<header class="clearfix">
+    <div style="display: flex;">
+        <img class="logo-img" alt="logo" src="./images/logo.png"/>
+        <h1>Swag Shop</h1>
+    </div>
+</header>
+    
+    
+<!-- NAVIGATION HERE -->
+<div class="wrapper" id="nav-wrapper">
+    <nav class="clearfix">
+        <button id="hmbg-menu" onclick="toggleMenu()">
+            <span>&equiv;<b class='menu-text'>OPEN</b></span>
+            <span>&otimes;<b class='menu-text'>CLOSE</b></span>
+        </button>
+        <ul id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Deals</a></li>
+            <li class="active"><a href="#">Order</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li class="parent"><a href="#">Locations </a>
+                <ul>
+                    <li><a href="#">Murray</a></li>
+                    <li><a href="#">Ogden</a></li>
+                    <li><a href="#">Provo</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</div>
+    
+    
+<!-- CONTENT HERE -->
+<main>
+    <h1>Order</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <label class="top">
+                    Full Name<span class='highlight'>*</span> <input type="text" name="fullname" placeholder="John Doe" required>
+                </label>
+                <label class="top">
+                    Phone<span class='highlight'>*</span> <input type="tel" name="phone" placeholder="123-456-7890" required>
+                </label>
+                <label class="top">
+                    Email<input type="email" name="email" placeholder="johndoe@mail.com" >
+                </label>
+            </fieldset>
+
+            <fieldset style="padding-bottom: 1rem;">
+                <legend>Swag Information</legend>
+                <label class="top">
+                    Date Needed <input type="date" name="date" >
+                </label>
+                <label class="top">
+                    Business Name <input type="text" name="business" >
+                </label>
+                <label class="top">
+                    Business URL <input type="url" name="businessurl" >
+                </label>
+                <label class="top">
+                    Quantity <input type="number" name="quantity" >
+                </label>
+                <label class="top">Color
+                    <select name="color">
+                        <option value="">-- Please Select &#9662;</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                        <option value="orange">Orange</option>
+                        <option value="purple">Purple</option>
+                        <option value="red">Red</option>
+                        <option value="silver">Silver</option>
+                    </select>
+                </label>
+                <div>Material</div>
+                <label class="sbs">
+                    <input type="radio" name="material" value="aluminum"> <b>Aluminum</b>
+                </label>
+                <label class="sbs">
+                    <input type="radio" name="material" value="plastic"> <b>Plastic</b>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label class="top">
+                    Name on Card<span class='highlight'>*</span> <input type="text" name="cardname" required>
+                </label>
+                <label class="top">
+                    Card Number <span class='highlight'>*</span> <input type="name" name="cardnumber" required>
+                </label>
+                <label class="top">
+                    Expiration Date<span class='highlight'>*</span> <input type="month" name="carddate" required>
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Order My Swag" class="button">
+        </form>
+
+</main>
+    
+<!-- FOOTER HERE -->  
+<div class="wrapper" id="footer-wrapper"> 
+    <footer>
+        <p style="text-align: center">&copy; 20XX Sean Jensen | Login</p>
+    </footer>
+</div>
+
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
